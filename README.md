@@ -1,13 +1,17 @@
-passport-mongo
-==============
+Домашнее задание к занятию «2.8 Аутентификация. Passport.js»
+Правила выполнения домашней работы:
 
-This repository serves as an example of a basic Node.js application which is using [Passport](http://passportjs.org/) as the authentication middleware for authenticating against a locally configured Mongo backend
+выполняйте домашнее задание в отдельной ветке проекта на GitHub,
+в поле для сдачи работы прикрепите ссылку на ваш проект в Git,
+присылать на проверку можно каждую задачу по отдельности или все задачи вместе,
+во время проверки по частям ваша домашняя работа будет обозначаться статусом «На доработке»,
+любые вопросы по решению задач задавайте в канале вашей группы.
 
-Steps to run the app
-=====================
-* After cloning the repo, install the dependencies by running **npm install**
-* To start the server, run **npm start** on the base directory
+## Задание
 
-Prequisites
-============
-The server assumes that you have a local mongo instance running. This means if you have mongo installed locally, all you need to do is configure the db.js file correctly and run the mongod daemon
+Реализуйте API:
+GET /api/user/login страница с формой входа / регистрации
+GET /api/user/me страница профиля
+POST /api/user/login
+POST /api/user/signup
+Настройте локальную аутентификацию с помощью PassportJS.
